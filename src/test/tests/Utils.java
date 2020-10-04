@@ -1,18 +1,14 @@
-package tests;
+package Tests;
 
-import java.util.Random;
+
 
 public class Utils {
-    public static String getRandomEmailAddress() {
-        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
-        Random rnd = new Random();
-        while (salt.length() < 10) { // length of the random string.
-            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-            salt.append(SALTCHARS.charAt(index));
-        }
-        String saltStr = salt.toString();
-        return saltStr + "@test.com";
 
-    }
+    public final String GENERAL_URL = "https://demoqa.com/books";
+    public final String FIRST_TEXT = "Learning JavaScript";
+    public final String SECOND_TEXT = "Eloquent JavaScript";
+    public final String THIRD_TEXT = "You Don't Know JS";
+    public final String E2E_URL = "https://demoqa.com/automation-practice-form";
+    public final String bookToCheck = "Learning JavaScript Design Patterns";
+
 }

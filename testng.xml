@@ -4,8 +4,9 @@
     <test name="Open the home page">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="tests.HomePageTest"/>
-            <class name="tests.HomePageTest1"/>
+            <class name="Tests.Part1"/>
+            <class name="Tests.Part2"/>
+
         </classes>
     </test>
 </suite>
